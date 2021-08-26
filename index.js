@@ -1,7 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-inquirer.prompt([
+const questions = [inquirer.prompt([
         {
             type: 'input',
             name: 'projectTitle',
@@ -52,7 +52,7 @@ inquirer.prompt([
            },
            } 
         },
-    ])
+    ])]
 
   .then((answers) => {
     const readMe = generateReadme(answers);
