@@ -1,5 +1,4 @@
-// TODO: Include packages needed for this application
-const path = require("path");
+// Include packages needed for this application - inquirer and Filesystem(fs)
 const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
@@ -7,7 +6,7 @@ const generateMarkdown = require("./utils/generateMarkdown");
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
-// TODO: Create an array of questions for user input
+// Prompt questions to the user to generate the Readme on project details
 const promptQuestions = () => {
   return inquirer.prompt([
     {
@@ -59,7 +58,7 @@ const promptQuestions = () => {
   ]);
 };
 
-// TODO: Create a function to initialize app
+//Function to initialize application
 const init = () => {
   promptQuestions()
     .then((answers) => writeFileAsync("README.md", generateMarkdown(answers)))

@@ -1,8 +1,8 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+//Function to get License badge details based on the choice of Licenses by user
+
 const renderLicenseBadge = (license) => {
   switch (license) {
-    case "Apache 2.0":
+    case "APACHE 2.0":
       return `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
 
     case "MIT":
@@ -19,11 +19,10 @@ const renderLicenseBadge = (license) => {
   }
 };
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+//Function to get License link details based on the choice of Licenses by user
 const renderLicenseLink = (license) => {
   switch (license) {
-    case "Apache 2.0":
+    case "APACHE 2.0":
       return `Apache 2.0 (https://opensource.org/licenses/Apache-2.0)`;
 
     case "MIT":
@@ -37,18 +36,16 @@ const renderLicenseLink = (license) => {
   }
 };
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+////Function for License details based on the choice of Licenses by user
 const renderLicenseSection = (title, license) => {
   if(license !== "None") {
     return `The application ${title} is covered under ${renderLicenseLink(license)}`;
   } else {
-    return "";
-  }
-  
+    return "This application is not covered under any license.";
+  }  
 };
 
-// TODO: Create a function to generate markdown for README
+//Generate markdown based on user inputs with project details
 const generateMarkdown = (data) => {
   console.log(data);
   return `# ${data.projectTitle}
@@ -59,26 +56,34 @@ ${renderLicenseBadge(data.license)}
 ${data.projectDesc}
 
 ## Table of contents
+[**1. Installation**](#installation)
+[**2. Usage**](#usage)
+[**3. License**](#license)
+[**4. Contributing**](#contributing)
+[**5. Tests**](#tests)
+[**6. Questions**](#questions)
 
-**1. Installation**
+######Installation
 >${data.installation}
 
-**2. Usage**
+######Usage
 >${data.usageInfo}
 
-**3. License**
+######License
 ${renderLicenseSection(data.projectTitle, data.license)}
 
-**4. Contributing**
+######Contributing
 >${data.contributing}
 
-**5. Tests**
+######Tests
 >${data.tests}
 
-**6. Questions**
+######Questions
   - [GitHub](https://github.com/${data.gitUname})
   - Technical Support: Email queries to ${data.email}
 `;
 };
+
+//export "generateMarkdown.js" to index.js
 
 module.exports = generateMarkdown;
