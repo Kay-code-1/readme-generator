@@ -1,5 +1,4 @@
 //Function to get License badge details based on the choice of Licenses by user
-
 const renderLicenseBadge = (license) => {
   switch (license) {
     case "APACHE 2.0":
@@ -36,7 +35,7 @@ const renderLicenseLink = (license) => {
   }
 };
 
-////Function for License details based on the choice of Licenses by user
+//Function for License details based on the choice of Licenses by user
 const renderLicenseSection = (title, license) => {
   if(license !== "None") {
     return `The application ${title} is covered under ${renderLicenseLink(license)}`;
@@ -45,17 +44,18 @@ const renderLicenseSection = (title, license) => {
   }  
 };
 
-//Generate markdown based on user inputs with project details
+// Generate markdown based on user inputs with project details
 const generateMarkdown = (data) => {
-  console.log(data);
   return `# ${data.projectTitle}
 
 ${renderLicenseBadge(data.license)}
 
 ## Description
+
 ${data.projectDesc}
 
 ## Table of contents
+
 [**1. Installation**](#installation)
 [**2. Usage**](#usage)
 [**3. License**](#license)
@@ -63,27 +63,32 @@ ${data.projectDesc}
 [**5. Tests**](#tests)
 [**6. Questions**](#questions)
 
-######Installation
+### Installation
+
 >${data.installation}
 
-######Usage
+### Usage
+
 >${data.usageInfo}
 
-######License
+### License
+
 ${renderLicenseSection(data.projectTitle, data.license)}
 
-######Contributing
+### Contributing
+
 >${data.contributing}
 
-######Tests
+### Tests
+
 >${data.tests}
 
-######Questions
-  - [GitHub](https://github.com/${data.gitUname})
-  - Technical Support: Email queries to ${data.email}
+### Questions
+
+- [GitHub](https://github.com/${data.gitUname})
+- Technical Support: Email queries to ${data.email}
 `;
 };
 
-//export "generateMarkdown.js" to index.js
-
+// export module 
 module.exports = generateMarkdown;

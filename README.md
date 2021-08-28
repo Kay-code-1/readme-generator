@@ -1,33 +1,11 @@
-# tes
-
-
+# README GENERATOR
 
 ## Description
-test
 
-## Table of contents
-[**1. Installation**](#installation)
-[**2. Usage**](#usage)
-[**3. License**](#license)
-[**4. Contributing**](#contributing)
-[**5. Tests**](#tests)
-[**6. Questions**](#questions)
+This application enables users to create high quality markdown README file.
 
-######Installation
->test
+## Usage
 
-######Usage
->test
-
-######License
-
-
-######Contributing
->test
-
-######Tests
->dfh
-
-######Questions
-  - [GitHub](https://github.com/df)
-  - Technical Support: Email queries to d
+```shell
+node index.js
+```
