@@ -1,5 +1,6 @@
 //Function to get License badge details based on the choice of Licenses by user
 const renderLicenseBadge = (license) => {
+  console.log(license);
   switch (license) {
     case "APACHE 2.0":
       return `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
@@ -20,6 +21,7 @@ const renderLicenseBadge = (license) => {
 
 //Function to get License link details based on the choice of Licenses by user
 const renderLicenseLink = (license) => {
+  console.log(license);
   switch (license) {
     case "APACHE 2.0":
       return `Apache 2.0 (https://opensource.org/licenses/Apache-2.0)`;
@@ -46,6 +48,7 @@ const renderLicenseSection = (title, license) => {
 
 // Generate markdown based on user inputs with project details
 const generateMarkdown = (data) => {
+  console.log(data);
   return `# ${data.projectTitle}
 
 ${renderLicenseBadge(data.license)}
