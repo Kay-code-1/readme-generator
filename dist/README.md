@@ -1,6 +1,6 @@
-# Test
+# test
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
@@ -25,7 +25,7 @@ test
 
 ### License
 
-The application Test is covered under GNU GPL V3 (https://www.gnu.org/licenses/gpl-3.0)
+The application test is covered under MIT (https://opensource.org/licenses/MIT)
 
 ### Contributing
 
@@ -37,5 +37,5 @@ The application Test is covered under GNU GPL V3 (https://www.gnu.org/licenses/g
 
 ### Questions
 
-- [GitHub](https://github.com/test)
+- [GitHub](https://github.com/k)
 - Technical Support: Email queries to test@test.com
