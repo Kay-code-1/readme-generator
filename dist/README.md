@@ -1,10 +1,10 @@
-# test
+# Team Generator
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
 ## Description
 
-test
+Team generator is a Node.js command line application to create an Organization structure with roles: Manager and Engineer - Interns as team members. Manager can add multiple employees and interns and generate Team structure. 
 
 ## Table of contents
 
@@ -17,25 +17,25 @@ test
 
 ### Installation
 
->test
+>Open the app.js file in Command line interface and  get started. 
 
 ### Usage
 
->test
+>The user would be prompted for Manager details, followed by employee details. Add the details and generate HTML file with required details.
 
 ### License
 
-The application test is covered under MIT (https://opensource.org/licenses/MIT)
+This application is not covered under any license.
 
 ### Contributing
 
->test
+>-
 
 ### Tests
 
->test
+>The application may be tested for following validations - Email ID format, Phone number to be 10 digits and errors displayed in console log.
 
 ### Questions
 
-- [GitHub](https://github.com/k)
-- Technical Support: Email queries to test@test.com
+- [GitHub](https://github.com/kay-code-1)
+- Technical Support: Email queries to -
