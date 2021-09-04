@@ -20,6 +20,12 @@ const promptQuestions = () => {
       message: "Enter a brief project description.",
     },
     {
+      type: "checkbox",
+      name: "techStack",
+      message: "Select a license for project.",
+      choices: ["HTML", "CSS", "JavaScript", "Node.js", "Express.js", "SQL"],
+    },
+    {
       type: "input",
       name: "installation",
       message: "Enter installation instructions.",

@@ -57,6 +57,10 @@ ${renderLicenseBadge(data.license)}
 
 ${data.projectDesc}
 
+## Technology Stack
+
+${data.techStack}
+
 ## Table of contents
 
 [**1. Installation**](#installation)
