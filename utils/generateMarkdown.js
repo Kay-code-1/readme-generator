@@ -52,8 +52,7 @@ const generateMarkdown = (data) => {
   console.log(data);
   return `# ${data.projectTitle}
 
-
-[![License](https://img.shields.io/badge/License-${data.license}-blue.svg)](https://opensource.org/licenses/${data.license})
+[![License](https://img.shields.io/badge/License-${data.license.replace(' ', '%20')}-blue.svg)](https://opensource.org/licenses/${data.license.replace(' ', '-')})
 
 ## Description
 
