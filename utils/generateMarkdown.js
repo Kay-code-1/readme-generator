@@ -1,46 +1,47 @@
 //Function to get License badge details based on the choice of Licenses by user
-const renderLicenseBadge = (license) => {
-  console.log(license);
-  switch (license) {
-    case "APACHE 2.0":
-      return `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
+// const renderLicenseBadge = (license) => {
+//   console.log(license);
+//   switch (license) {
+//     case "APACHE 2.0":
+//       return `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
 
-    case "MIT":
-      return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
+//     case "MIT":
+//       return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
 
-    case "GNU GPL V3":
-      return `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`;
+//     case "GNU GPL V3":
+//       return `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`;
 
-    case "BSD 3-Clause":
-      return `[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)`;
+//     case "BSD 3-Clause":
+//       return `[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)`;
 
-    default:
-      return "";
-  }
-};
+//     default:
+//       return "";
+//   }
+// };
 
 //Function to get License link details based on the choice of Licenses by user
-const renderLicenseLink = (license) => {
-  console.log(license);
-  switch (license) {
-    case "APACHE 2.0":
-      return `Apache 2.0 (https://opensource.org/licenses/Apache-2.0)`;
+// const renderLicenseLink = (license) => {
+//   console.log(license);
+//   switch (license) {
+//     case "APACHE 2.0":
+//       return `Apache 2.0 (https://opensource.org/licenses/Apache-2.0)`;
 
-    case "MIT":
-      return `MIT (https://opensource.org/licenses/MIT)`;
+//     case "MIT":
+//       return `MIT (https://opensource.org/licenses/MIT)`;
 
-    case "GNU GPL V3":
-      return `GNU GPL V3 (https://www.gnu.org/licenses/gpl-3.0)`;
+//     case "GNU GPL V3":
+//       return `GNU GPL V3 (https://www.gnu.org/licenses/gpl-3.0)`;
 
-    case "BSD 3-Clause":
-      return `BSD 3-Clause (https://opensource.org/licenses/BSD-3-Clause)`;
-  }
-};
+//     case "BSD 3-Clause":
+//       return `BSD 3-Clause (https://opensource.org/licenses/BSD-3-Clause)`;
+//   }
+// };
 
 //Function for License details based on the choice of Licenses by user
+
 const renderLicenseSection = (title, license) => {
   if(license !== "None") {
-    return `The application ${title} is covered under ${renderLicenseLink(license)}`;
+    return `The application ${title} is covered under ${license} https://opensource.org/licenses/${license}.`;
   } else {
     return "This application is not covered under any license.";
   }  
@@ -51,7 +52,7 @@ const generateMarkdown = (data) => {
   console.log(data);
   return `# ${data.projectTitle}
 
-${renderLicenseBadge(data.license)}
+[![License](https://img.shields.io/badge/License-${data.license}-blue.svg)](https://opensource.org/licenses/${data.license});
 
 ## Description
 

@@ -22,7 +22,7 @@ const promptQuestions = () => {
     {
       type: "checkbox",
       name: "techStack",
-      message: "Select a license for project.",
+      message: "Select Technology stack for the project.",
       choices: ["HTML", "CSS", "JavaScript", "Node.js", "Express.js", "SQL"],
     },
     {
@@ -39,7 +39,7 @@ const promptQuestions = () => {
       type: "list",
       name: "license",
       message: "Select a license for project.",
-      choices: ["MIT", "APACHE 2.0", "GNU GPL V3", "BSD 3-Clause", "None"],
+      choices: ["MIT", "APACHE-2.0", "LGPL-3.0", "BSD-3-Clause", "None"],
     },
     {
       type: "input",
