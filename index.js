@@ -39,7 +39,7 @@ const promptQuestions = () => {
       type: "list",
       name: "license",
       message: "Select a license for project.",
-      choices: ["MIT", "APACHE-2.0", "LGPL-3.0", "BSD-3-Clause", "None"],
+      choices: ["MIT", "APACHE2.0", "LGPL3.0", "BSD3--Clause", "None"],
     },
     {
       type: "input",
